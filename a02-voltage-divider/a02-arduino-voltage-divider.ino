@@ -11,6 +11,7 @@
  * 
  *  Update Feb 7th, 2020
  * 
+ *  analogReadResolution(12) assumed default
  */
 
 #include <Arduino.h>  // only needed for https://platformio.org/
