@@ -1,0 +1,35 @@
+using two clients  ot-cli-ftd  
+
+
+
+Get the Joiner's EUI-64
+> eui64                                 
+2260070000000000                        
+Setup the Commissioner.
+> panid 0x5656                          
+Done                                    
+> ifconfig up                           
+Done                                    
+> thread start                                                           
+Done
+> commissioner start                                                            
+Done                                                                            
+> commissioner joiner add 2260070000000000 PSK                                  
+Done                                                                            
+Start the Joiner.
+> ifconfig up                           
+Done
+> joiner start PSK
+Done                                                                      
+> Join success                                                                  
+> panid                                                                         
+5656        
+
+
+
+
+indrapanwar commented on Jan 22, 2018 • 
+@kyberpunk : Thank you . I will go through the issue. I created network by ot-ncp-ftd (TMF=1,BORDERROUTER=1,JOINER=1) and ot-cli-ftd (JOINER=1) could join the network through out-band commissioning. I could ping border router from CLI.
+
+
+
