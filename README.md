@@ -1,8 +1,45 @@
-# particle.io-photon-high-school-robotics
+# Arduino High School Robotics Course
+
+## A High School Robotics course using several Arduino boards from the: Nano33Iot, Nano33BleSense, PortanaH7, and a few others boards that I put the Arduino nRF52840 Bootloader on 
+
+Note: Started Feb 6th, 2020 forked from https://github.com/hpssjellis/particle.io-photon-high-school-robotics
+
+
+DRAFT, DRAFT, DRAFT, DRAFT, DRAFT, DRAFT, DRAFT, DRAFT, DRAFT, DRAFT, DRAFT, DRAFT, DRAFT, DRAFT, DRAFT, DRAFT, 
+
+
+As of Feb 6th, 2020 non of these programs have been tested on any Arduinos. I just started this today. I probably have to change all the code, all the examples and all the videos so it may take a while. I don't even have my PotentaH7 boards yet.
+
+DRAFT, DRAFT, DRAFT, DRAFT, DRAFT, DRAFT, DRAFT, DRAFT, DRAFT, DRAFT, DRAFT, DRAFT, DRAFT, DRAFT, DRAFT, DRAFT, 
+
+..
 
 
 
-Note: update Sept 16, 2019
+
+
+.
+
+
+
+
+
+
+.
+
+
+
+
+
+.
+
+
+
+
+
+.
+
+
 
 If in any of my code you see
 
