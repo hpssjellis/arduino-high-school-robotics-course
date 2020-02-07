@@ -9,19 +9,19 @@ A work in progress
 
 1. [Nano 33 IoT from the Arduino Store](https://store.arduino.cc/usa/nano-33-iot-with-headers) $20.00 USD
 
-1. [Elenco-SC-750-Snap-Circuits-Extreme](https://www.amazon.ca/Elenco-SC-750-Snap-Circuits-Extreme/dp/B0002AHQWS)
+1. [Elenco-SC-750-Snap-Circuits-Extreme](https://www.amazon.com/Snap-Circuits-SC-750-Electronics-Exploration/dp/B0002AHQWS/ref=sr_1_2?keywords=Elenco+SC-750+Snap+Circuits+Extreme+SC-750&qid=1581056501&sr=8-2)   $125.29 USD
 
-1. [10 Snap to pin cables](https://www.amazon.ca/Snap-Circuits-SCJW10-Project-Connectors/dp/B013DA8XH0/ref=sr_1_fkmr0_1?s=toys&ie=UTF8&qid=1504073209&sr=1-1-fkmr0&keywords=snapcircuits+10+Snap+to+pin+cables)
+1. [10 Snap to pin cables](https://www.amazon.com/Snap-Circuits-Project-Connectors-Expand/dp/B013DA8XH0/ref=sr_1_3?keywords=Snap+Circuits+SCJW10+Snap-to-Pin%2C+Project+Connectors&qid=1581056599&sr=8-3)   $11.79 USD
 
-1. [Servo motor](https://www.pololu.com/product/1057)
+1. [Servo motor](https://www.pololu.com/product/1057) $19.95 USD
 
-1. [Stepper Motor](https://www.pololu.com/product/1204) and Driver
+1. [Stepper Motor](https://www.pololu.com/product/1204) $17.95 USD and [Driver](https://www.pololu.com/product/2134) $5.95 USD
 
-1. [Dual](https://www.pololu.com/product/2135) and [big](https://www.pololu.com/product/1451) DC motor drivers
+1. [Dual](https://www.pololu.com/product/2135) $4.49 USD and [Big](https://www.pololu.com/product/1451) $24.95 USD DC motor drivers
 
-1. [DC motor](https://www.pololu.com/product/3225)
+1. [DC motor](https://www.pololu.com/product/3225) $19.95 USD
 
-1. Rangefinder Ultrasonic	[RB-Ite-54](http://www.robotshop.com/en/hc-sr04-ultrasonic-range-finder.html)	$2.50
+1. [HC-SR04 Ultra01+ Ultrasonic Range Finder](https://www.robotshop.com/en/hc-sr04-ultra01-ultrasonic-range-finder.html)	$3.50
 
 1. Grove OLED 0.96"	[104030008](http://www.seeedstudio.com/depot/Grove-OLED-Display-112-p-781.html)	$14.90
 
@@ -37,6 +37,8 @@ x 15 for a class of 30 student Total =
 1. [Nano 33 Ble Sense from the Arduino Store](https://store.arduino.cc/usa/nano-33-ble-sense-with-headers) $31.50 USD
 
 1. [Potenta H7 from the Arduino Store](https://store.arduino.cc/usa/portenta-h7) $99.99 USD
+
+1. [Seeeduino XIAO](https://www.seeedstudio.com/Seeeduino-XIAO-Arduino-Microcontroller-SAMD21-Cortex-M0+-p-4426.html) Wow look at the price $4.90 USD
 
 1. [Pixy camera](https://pixycam.com/) purchase [Charmed Labs Pixy 2 CMUcam5 Image Sensor](https://www.robotshop.com/ca/en/charmed-labs-pixy-2-cmucam5-image-sensor.html) $80.00
 
