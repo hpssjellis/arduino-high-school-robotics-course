@@ -7,7 +7,7 @@ A work in progress
 
 ### Per two students
 
-1. [Photon Kit](https://store.particle.io/products/photon-kit)
+1. [Nano 33 IoT from the Arduino Store](https://store.arduino.cc/usa/nano-33-iot-with-headers) $20.00 USD
 
 1. [Elenco-SC-750-Snap-Circuits-Extreme](https://www.amazon.ca/Elenco-SC-750-Snap-Circuits-Extreme/dp/B0002AHQWS)
 
@@ -32,6 +32,11 @@ x 15 for a class of 30 student Total =
 
 
 ## Class needs at least one of each of the following:
+
+
+1. [Nano 33 Ble Sense from the Arduino Store](https://store.arduino.cc/usa/nano-33-ble-sense-with-headers) $31.50 USD
+
+1. [Potenta H7 from the Arduino Store](https://store.arduino.cc/usa/portenta-h7) $99.99 USD
 
 1. [Pixy camera](https://pixycam.com/) purchase [Charmed Labs Pixy 2 CMUcam5 Image Sensor](https://www.robotshop.com/ca/en/charmed-labs-pixy-2-cmucam5-image-sensor.html) $80.00
 
