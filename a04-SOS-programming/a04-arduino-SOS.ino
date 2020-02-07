@@ -17,7 +17,7 @@
  *  analogwrite(A0) range 0-255
  */
 
-//#include <Arduino.h>  // only needed for https://platformio.org/
+#include <Arduino.h>  // only needed for https://platformio.org/
 
 
 void setup() {
@@ -37,7 +37,7 @@ void loop() {
   digitalWrite(LED_BUILTIN, 0);
   delay(200); 
   
-  // You put code heree to finish the SOS signal
+  // You put code here to finish the SOS signal
   
   delay(3000);    // longer wait 
    
