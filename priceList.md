@@ -1,6 +1,5 @@
 # Minimal Price List for a Photon based Robotics course 
-Aug 2017 USD or CDN costs
-(Multiply CDN x 1.25 to get USD)
+
 
 A work in progress
 
@@ -26,9 +25,9 @@ A work in progress
 1. Grove OLED 0.96"	[104030008](http://www.seeedstudio.com/depot/Grove-OLED-Display-112-p-781.html)	$14.90
 
 
-Total =   
+Total =  ~$268.72 USD
 
-x 15 for a class of 30 student Total = 
+x 15 for a class of 30 student Total =  $4,030.80 USD per class
 
 
 ## Class needs at least one of each of the following:
@@ -74,26 +73,7 @@ x 15 for a class of 30 student Total =
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Total cost = 
+Total cost = $346.47 for the atleast list.
 
 
 
