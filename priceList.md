@@ -22,22 +22,35 @@ A work in progress
 
 1. [HC-SR04 Ultra01+ Ultrasonic Range Finder](https://www.robotshop.com/en/hc-sr04-ultra01-ultrasonic-range-finder.html)	$3.50
 
+
+1. Flex sensor		[RB-Spa-989](http://www.robotshop.com/ca/en/22-10k-flexible-sensor.html)	shop	$11.93 USD
+
+
 1. Grove OLED 0.96"	[104030008](http://www.seeedstudio.com/depot/Grove-OLED-Display-112-p-781.html)	$14.90
 
+1. 22 guage solid core wire, with wire strippers or [](https://www.amazon.com/Elegoo-EL-CP-004-Multicolored-Breadboard-arduino/dp/B01EV70C78/ref=redir_mobile_desktop?_encoding=UTF8&aaxitk=Iz.FWQ4uOVXXqxgmxz3oLw&hsa_cr_id=4414025220401&ref_=sb_s_sparkle) $6.98 USD
 
-Total =  ~$268.72 USD
 
-x 15 for a class of 30 student Total =  $4,030.80 USD per class
+
+
+Total =  ~$256.73 USD (Without SNAP circuits = $119.65 USD )
+
+x 15 for a class of 30 student Total =  $3850.95 USD per class (Without SNAPcircuits and in groups of 3 per set  = $1,196.5)
+
+This price can be extremely different as you pick and choose from the above list. For absolute beginners at robotics I highly recommend the [Elenco-SC-750-Snap-Circuits-Extreme](https://www.amazon.com/Snap-Circuits-SC-750-Electronics-Exploration/dp/B0002AHQWS/ref=sr_1_2?keywords=Elenco+SC-750+Snap+Circuits+Extreme+SC-750&qid=1581056501&sr=8-2)  for $125.29 USD, however if you already have an electronics setup with all the basics then you might remove this from your list,  
 
 
 ## Class needs at least one of each of the following:
 
+1. (essential) [Adafruit Particle Debugger](https://www.adafruit.com/product/4001) $20.00 USD This is very useful for working with other boards or for if you accidentally mess up your Arduino bootloader.
 
-1. [Nano 33 Ble Sense from the Arduino Store](https://store.arduino.cc/usa/nano-33-ble-sense-with-headers) $31.50 USD
+1. 4x[breadboards](https://www.amazon.com/Pcs-MCIGICM-Points-Solderless-Breadboard/dp/B07PCJP9DY/ref=sr_1_5?keywords=breadboard&qid=1581186529&s=industrial&sr=1-5) $6.99 USD (comes in a set of 4 so just need 4 of these for your class )
 
-1. [Potenta H7 from the Arduino Store](https://store.arduino.cc/usa/portenta-h7) $99.99 USD
+1. [Nano 33 Ble Sense from the Arduino Store](https://store.arduino.cc/usa/nano-33-ble-sense-with-headers) $31.50 USD Note: This board does not have Wifi
 
-1. [Seeeduino XIAO](https://www.seeedstudio.com/Seeeduino-XIAO-Arduino-Microcontroller-SAMD21-Cortex-M0+-p-4426.html) Wow look at the price $4.90 USD
+1. [Potenta H7 from the Arduino Store](https://store.arduino.cc/usa/portenta-h7) $99.99 USD. If you can afford it I would have these for the whole class. I havn't even received my Portenta H7 yet.
+
+1. [Seeeduino XIAO](https://www.seeedstudio.com/Seeeduino-XIAO-Arduino-Microcontroller-SAMD21-Cortex-M0+-p-4426.html) Wow look at the price $4.90 USD  If you can't afford the above class set of Nan 33 IoT boards then this is an amazing reduction in price. Not sure if it will do everything yet.
 
 1. [Pixy camera](https://pixycam.com/) purchase [Charmed Labs Pixy 2 CMUcam5 Image Sensor](https://www.robotshop.com/ca/en/charmed-labs-pixy-2-cmucam5-image-sensor.html) $80.00
 
@@ -50,8 +63,6 @@ x 15 for a class of 30 student Total =  $4,030.80 USD per class
 
 
 1. Capacitive Touch	[RB-Dfr-27](	http://www.robotshop.com/en/at42qt1010-capacitive-touch-breakout.html)	$6.95
-
-1. Flex sensor		[RB-Spa-989](http://www.robotshop.com/ca/en/22-10k-flexible-sensor.html)	shop	$11.93 USD
 
 1. Hall Effect Sensor (Magnetic)		[RB-Spa-251](http://www.robotshop.com/ca/en/hall-effect-sensor.html)	$1.27 USD
 
@@ -73,7 +84,9 @@ x 15 for a class of 30 student Total =  $4,030.80 USD per class
 
 
 
-Total cost = $346.47 for the atleast list.
+Total cost = $382.50 for getting one of each of the above. Once again mix and matching can make things better for your program. 
+
+
 
 
 
