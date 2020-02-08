@@ -10,6 +10,8 @@
  * 
  */
 
+#include <Arduino.h>  // only needed for https://platformio.org/
+
 void setup(){  
   
   pinMode(LED_BUILTIN, OUTPUT);
