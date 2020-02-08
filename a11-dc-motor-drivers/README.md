@@ -13,7 +13,7 @@ Use the two check.ino to test your electrical connections
 Good luck.
 
 
-![](a-dual-motor-driver2.png)
+![](dual-motor-driver2.png)
 [The Dual Motor Driver Pololu link](https://www.pololu.com/product/2135)
 
 
