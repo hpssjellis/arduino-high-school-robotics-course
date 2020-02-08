@@ -13,10 +13,10 @@
  * Example
  * P --> 6 Volt negative connection
  * N --> board GND
- * P --> 6V Positive connection and board positive from digital or analog output pin
+ * P --> 6V Positive connection and board positive from digital or analog output pin A4
  * 
  * N --> 6 volt positive connection
- * P --> board positive from digital or analog output pin
+ * P --> board positive from digital or analog output pin A4
  * N --> 6 volt negative connection and board GND 
  * 
  * see image at https://github.com/hpssjellis/arduino-high-school-robotics-course/blob/master/a10-transistor/pnp-npn.png
