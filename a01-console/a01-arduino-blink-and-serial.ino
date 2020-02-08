@@ -1,7 +1,9 @@
 /*  Blink and Serial
  *  Arduino test program 
+ *
  *  By Jeremy Ellis twitter @rocksetta
- *  Aarduino High School Course at
+ *  Webpage http://rocksetta.com
+ *  Arduino High School Robotics Course at
  *  https://github.com/hpssjellis/arduino-high-school-robotics-course
  * 
  *  Update Feb 7th, 2020
