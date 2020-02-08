@@ -1,13 +1,14 @@
 /*  
- *   a09-arduino-servo
+ *   a09-arduino-servo.ino
  *
  * MUST HAVE A 6 VOLT EXTERNAL BATTERY
- * Servos run from 0 to 180 degrees
+ * Note: REMEMBER 2 WIRES GO TO THE SERVO GROUND (Battery Neg and Board GND)
+ * Servos run from 0 to 180 degrees, test 20 - 160 first
  * 
  * servo red to 6V battery positive
  * servo ground (brown or black) to 6V battery negative
- * servo ground to Photon GND
- * servo controller (orange or the other color) to Photon PWM pin A4   
+ * servo ground (brown or black) to board GND
+ * servo controller (orange or the other color) to board PWM pin A4   
  * 
  * Note For PWM pins check your boards Pinout diagram.
  * 
@@ -26,39 +27,33 @@
 Servo myServo4;
 
 void setup() {
-    myServo4.attach(A4);
-    pinMode(LED_BUILTIN, OUTPUT);
+  
+  myServo4.attach(A4);
+  pinMode(LED_BUILTIN, OUTPUT);
 
 }
 
 void loop() {
+ 
+  digitalWrite(LED_BUILTIN, 1); // LED on    
     
-   // myServo4.attach(A4);
+  myServo4.write(20);           // servo at 20 degrees try 0
+  delay(2000);
     
-    
-    digitalWrite(LED_BUILTIN, 1);       // D7 on    
-    
-    myServo4.write(0);          // servo at 0 degrees minimum
-    delay(2000);
-    
-    myServo4.write(180);        // servo at 180 degrees Maximum
-    delay(2000);
+  myServo4.write(160);         // servo at 160 degrees try 180
+  delay(2000);
 
-    myServo4.write(90);         // servo at 90 degrees
-    delay(2000);   
+  myServo4.write(90);          // servo at 90 degrees
+  delay(2000);   
     
     
-    for (int myLoop = 0; myLoop <= 180; myLoop++){
-        myServo4.write(myLoop);
-        delay(25);  // short delay 25 ms
-    }
+  for (int myLoop = 20; myLoop <= 160; myLoop++){
+    myServo4.write(myLoop);
+    delay(25);  // short delay 25 ms
+  }
 
-
-    digitalWrite(LED_BUILTIN, 0);     // D7 off
-    delay(5000);            // 5 second delay
-    
-    
-   // myServo4.detach();   // less weird stuff if you detach the servo
+  digitalWrite(LED_BUILTIN, 0);     // LED off
+  delay(5000);            // 5 second delay
 
 }
 
