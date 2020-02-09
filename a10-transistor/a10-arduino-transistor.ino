@@ -7,7 +7,7 @@
  * 
  * Trick for connecting your board and 6V circuit to the transitor
  * First letter is opposite the 6 volt connection. P connect negative, N connect positive.
- * The middle letter tells you the board connection. If N connect ground, if P connect digital or analog output
+ * The middle letter tells you the board connection. If N connect ground, if P connect digital or analog output A4
  * The last letter tells you both the 6V circuit and the board connection, P for positive, N for negative
  * 
  * Example
@@ -22,7 +22,7 @@
  * see image at https://github.com/hpssjellis/arduino-high-school-robotics-course/blob/master/a10-transistor/pnp-npn.png
  *
  *
-
+ *
  *  By Jeremy Ellis twitter @rocksetta
  *  Webpage http://rocksetta.com
  *  Arduino High School Robotics Course at
@@ -30,30 +30,39 @@
  * 
  *  Update Feb 7th, 2020
  * 
+ * 
+ * Note: Check your board for the PWM pins.
+ * On the Nano 33 IOT the PWM pins are: D3, D5, D6, D9, D10
+ * For the Nano 33 BLE not sure if all digital pins can do PWM or just the above ones.
+ * The Portenta H7 has 10 PWM pins not yet sure which ones.
+ * 
  */
 
 
+#include <Arduino.h>  // only needed for https://platformio.org/
+
+
 void setup() {
-   pinMode(A4, OUTPUT);
+   pinMode(3, OUTPUT);  // set D3 for PWM
    pinMode(LED_BUILTIN, OUTPUT);
 }
 
 void loop() {
-    analogWrite(A4, 100);
-    digitalWrite(LED_BUILTIN,1);
+    analogWrite(3, 100);   // Note: motors might hav a minimum of 100
+    digitalWrite(LED_BUILTIN,1); // LED on
     delay(1000);
     
-    analogWrite(A4, 0);
-    digitalWrite(LED_BUILTIN,0);
+    analogWrite(3, 0);
+    digitalWrite(LED_BUILTIN,0);  // LED off
     delay(1000);
     
-    
-    analogWrite(A4, 200);  // PWM Max  = 255
+    analogWrite(3, 255); // PWM Max  = 255 
     digitalWrite(LED_BUILTIN,1);
-    delay(2000);
+    delay(1000);
+
     
-    analogWrite(A4, 0);
+    analogWrite(3, 0);
     digitalWrite(LED_BUILTIN,0);
-    delay(2000);
+    delay(6000);     // longer delay
 
 }
