@@ -5,12 +5,12 @@
  * Transistors can protect the board from higher voltages and currents 
  * while still allowing the board to control a higher power circuit.
  * 
- * Trick for connecting your board and 6V circuit to the transitor
- * First letter is opposite the 6 volt connection. P connect negative, N connect positive.
- * The middle letter tells you the board connection. If N connect ground, if P connect digital or analog output A4
+ * Trick for connecting your board and 6V circuit to the transitor to PNP or NPN transistors
+ * Connect the first letter last.
+ * The middle letter tells you the board connection. If N connect ground, if P connect digital or analog output D3
  * The last letter tells you both the 6V circuit and the board connection, P for positive, N for negative
  * 
- * Example
+ * Examples
  * P --> 6 Volt negative connection
  * N --> board GND
  * P --> 6V Positive connection and board positive from digital or analog output pin A4
