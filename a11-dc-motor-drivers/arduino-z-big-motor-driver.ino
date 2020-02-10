@@ -1,8 +1,8 @@
 /*  
- *   a11-dual-driver.ino
+ *   arduino-z-big-motor-driver.ino
  *
- * Motor Drivers take are complex systems of transistors 
- * making working with motors easier.
+ * Motor Drivers take complex systems of transistors 
+ * making working with DC motors much easier.
  * 
  *
  *
