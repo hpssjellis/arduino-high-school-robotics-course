@@ -13,7 +13,7 @@ Use the two check.ino to test your electrical connections
 Good luck.
 
 
-![](arduino-dual-motor-driver.png)
+![](image-dual-motor-driver.png)
 [The Dual Motor Driver Pololu link](https://www.pololu.com/product/2135)
 
 
@@ -27,7 +27,7 @@ Good luck.
 
 
 
-![](arduino-big-motor-driver.png)
+![](image-big-motor-driver.png)
 [The Big Motor Driver link](https://www.pololu.com/product/1451)
 
 
