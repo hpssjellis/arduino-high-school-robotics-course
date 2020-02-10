@@ -17,7 +17,7 @@ As of Feb 6th, 2020 none of these programs have been tested on any Arduinos. I j
 [Price List](priceList.md) Don't forget to see the price list for the basic Robotics course that I teach. Students tend to work in pairs but I have them plan three final projects two of which should be done individually. 
 
 
-
+To begin with, while teachers are preping their course, the most important item is to have at least 2 the [Nano 33 IoT from the Arduino Store](https://store.arduino.cc/usa/nano-33-iot-with-headers) $20.00 USD
 .
 
 
