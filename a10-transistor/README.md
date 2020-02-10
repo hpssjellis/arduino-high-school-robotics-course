@@ -2,3 +2,17 @@ Video [a10-transistor](https://youtu.be/S6xwStw-t1U?list=PL57Dnr1H_egsL0r4RXPA4P
 
 
 ![pnp-npn.png](pnp-npn.png)
+
+
+
+
+
+By Jeremy Ellis
+
+Canadian High School Robotics Teacher
+
+Maker of http://www.rocksetta.com
+
+Twitter https://twitter.com/rocksetta
+
+Use at your own risk!

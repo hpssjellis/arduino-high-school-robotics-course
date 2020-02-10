@@ -10,3 +10,15 @@ Video [A07-mobile-App](https://youtu.be/nR8pwlmnSJU?list=PL57Dnr1H_egsL0r4RXPA4P
 The only difference between this folder and a06-web-app folder is that the wap-app.html file must replace the index.html file in your forked version of this github repository. Then use https://build.phonegap.com to create the Android app.
 
 
+
+
+
+By Jeremy Ellis
+
+Canadian High School Robotics Teacher
+
+Maker of http://www.rocksetta.com
+
+Twitter https://twitter.com/rocksetta
+
+Use at your own risk!

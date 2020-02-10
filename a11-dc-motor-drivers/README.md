@@ -38,3 +38,17 @@ The dual motor driver (Max 11 V and 1.2 Amps for each motor) can control two mot
 The big motor driver has strange left and right digital pins. For many motors if both left and right are LOW (0) then the motor will coast. But if both left and right are HIGH (1) then the motor applies a brake! only if left is HIGH and right is low does it turn to the left (counterclockwise)
 
 P.S. If the motor does not turn the way you want just switch the motor connected wires.
+
+
+
+
+
+By Jeremy Ellis
+
+Canadian High School Robotics Teacher
+
+Maker of http://www.rocksetta.com
+
+Twitter https://twitter.com/rocksetta
+
+Use at your own risk!

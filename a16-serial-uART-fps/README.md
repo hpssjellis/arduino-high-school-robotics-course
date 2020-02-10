@@ -24,18 +24,14 @@ I think you can purchase the FPS from [Sparkfun Fingerprint scanner https://www.
 
 
 
+
+
 By Jeremy Ellis
 
+Canadian High School Robotics Teacher
 
+Maker of http://www.rocksetta.com
 
-
-Maker of www.rocksetta.com
-
-
-
-Twitter
-@rocksetta
-
+Twitter https://twitter.com/rocksetta
 
 Use at your own risk!
-

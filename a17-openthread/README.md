@@ -52,3 +52,16 @@ Same link as at the top of this page. Follow this link [https://hpssjellis.githu
 
 
 ```
+
+
+
+
+By Jeremy Ellis
+
+Canadian High School Robotics Teacher
+
+Maker of http://www.rocksetta.com
+
+Twitter https://twitter.com/rocksetta
+
+Use at your own risk!

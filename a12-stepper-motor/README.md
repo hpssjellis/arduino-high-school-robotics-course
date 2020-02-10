@@ -16,3 +16,17 @@ Video [a12-stepper-motor-driver](https://youtu.be/7wl20CeagmU?list=PL57Dnr1H_egs
 Check wires for your stepper. This is for the pololu 1204 stepper running with 6V
 
 ![](diagram.png)
+
+
+
+
+
+By Jeremy Ellis
+
+Canadian High School Robotics Teacher
+
+Maker of http://www.rocksetta.com
+
+Twitter https://twitter.com/rocksetta
+
+Use at your own risk!

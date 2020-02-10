@@ -11,3 +11,14 @@ The websocket takes about 10 ms to communicate
 
 Problem: The websocket hacks an old version of node ws which has been deprecated. Probably would be a good idea to try to update this code to a safer version of ws.
 
+
+
+By Jeremy Ellis
+
+Canadian High School Robotics Teacher
+
+Maker of http://www.rocksetta.com
+
+Twitter https://twitter.com/rocksetta
+
+Use at your own risk!
