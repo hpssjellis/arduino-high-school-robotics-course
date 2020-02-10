@@ -23,11 +23,12 @@ Good luck.
 
 
 .
+------------------------------------------------------------------------------------------------------------------------------
+
+# Now for high voltages and currents
 
 
-
-
-![](image-big-motor-driver.png)
+![](image-big-motor-driver2.png)
 [The Big Motor Driver link](https://www.pololu.com/product/1451)
 
 
