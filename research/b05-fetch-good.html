@@ -1,0 +1,25 @@
+
+<h3 align=center>Web page Async control of an Arduino Nano 33 IoT</h3>
+
+<input type=button value="Async LED_BUILTIN On" onclick="{
+  (async function () {
+    const myResponse =  await fetch('http://YOUR-URL/H', {mode: 'no-cors'})
+    await console.log('LED on sent')
+    document.getElementById('myFrame01').src += 'http://YOUR-URL';
+  })()  //end inline async
+}">
+
+<input type=button value="Async LED_BUILTIN Off" onclick="{
+  (async function () {
+    const myResponse =  await fetch('http://YOUR-URL/L', {mode: 'no-cors'})
+    await console.log('LED off sent')
+    document.getElementById('myFrame01').src += 'http://YOUR-URL';
+  })()  //end inline async
+}">
+
+<input type=button value="Reload iFrame" onclick="{
+   document.getElementById('myFrame01').src += 'http://YOUR-URL';
+}">
+
+
+<iframe id="myFrame01" width="100%" Height="300" src="http://10.167.217.38"></iframe>
