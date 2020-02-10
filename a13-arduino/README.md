@@ -17,7 +17,7 @@ Maker of http://www.rocksetta.com
 
 
 
-Twitter@rocksetta
+Twitter https://twitter.com/rocksetta?lang=en
 
 
 Use at your own risk!
