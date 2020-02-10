@@ -10,14 +10,10 @@ Video [a13-arduino](https://youtu.be/VYskWeBI9Os?list=PL57Dnr1H_egsL0r4RXPA4PY2y
 
 By Jeremy Ellis
 
-
-
+Canadian High School Robotics Teacher
 
 Maker of http://www.rocksetta.com
 
-
-
 Twitter https://twitter.com/rocksetta
-
 
 Use at your own risk!
