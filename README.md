@@ -3,14 +3,10 @@
 ## A High School Robotics course using several Arduino boards from the: Nano33Iot, Nano33BleSense, PortentaH7, and a few others boards that I put the Arduino nRF52840 Bootloader onto. 
 
 
+Started Feb 7th, 2020.
 
+I have already tested and converted to Arduino most of the folders up to a12-stepper-motor. I will be working on the other folders over the next little while. I will keep the old videos until I have had time to make some new videos.
 
-# DRAFT, DRAFT, DRAFT, DRAFT, DRAFT, DRAFT, DRAFT, DRAFT, DRAFT, DRAFT, DRAFT, DRAFT, DRAFT, DRAFT, DRAFT, DRAFT, 
-
-
-As of Feb 6th, 2020 none of these programs have been tested on any Arduinos. I just started this today. I probably have to change all the code, all the examples and all the videos so it may take a while. I don't even have my PotentaH7 boards yet.
-
-# DRAFT, DRAFT, DRAFT, DRAFT, DRAFT, DRAFT, DRAFT, DRAFT, DRAFT, DRAFT, DRAFT, DRAFT, DRAFT, DRAFT, DRAFT, DRAFT, 
 
 ..
 
