@@ -1,3 +1,17 @@
+
+
+
+New Arduino websocket being worked on at 
+
+https://github.com/hpssjellis/arduino-simple-websocket  Hopefully we will be able to use htttp://gitpod.io with this websocket.
+
+
+
+
+
+For the old Particle-Photon Websocket using http://repl.it then
+
+
 Go to the repository at https://github.com/hpssjellis/Particle-Spark-Core-Photon-Websocket-Hack
 
 
