@@ -1,7 +1,7 @@
 ## a05-platformIO is a chance to talk about IDE's (integrated development environment)
 
 
-1. The Arduino IDE, how to use it how to install libraries and new bords
+1. The Arduino IDE, how to use it, how to install libraries and new boards
 1. The online Arduino IDE https://create.arduino.cc/
 1. The online platformIO  https://platformio.org/
 1. The online cloud platform Gitpod.io  https://gitpod.io/workspaces/
