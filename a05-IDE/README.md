@@ -1,4 +1,4 @@
-## a05-platformIO is a chance to talk about IDE's (integrated development environment)
+## a05-IDE is a chance to talk about IDE's (Integrated Development Environment(s))
 
 
 1. The Arduino IDE, how to use it, how to install libraries and new boards
