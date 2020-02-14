@@ -1,6 +1,11 @@
 Will get this working for Arduino eventually.
 
 
+Checkout the backups and 
+
+http://sheepdogguides.com/arduino/art4ifttt.htm
+
+
 
 
 
