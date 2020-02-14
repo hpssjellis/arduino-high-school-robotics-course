@@ -96,6 +96,7 @@ void setup() {
     client.println("Host: maker.ifttt.com");
     //client.println("Connection: close");
     client.println("Connection: keep-alive");
+   // client.println("Keep-Alive: timeout=30, max=100");
     client.println();   
   }
 }
