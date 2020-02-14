@@ -1,0 +1,20 @@
+String readLine() {
+  String line;
+
+  while (1) {
+    if (Serial.available()) {
+      char c = Serial.read();
+
+      if (c == '\r') {
+        // ignore
+        continue;
+      } else if (c == '\n') {
+        break;
+      }
+
+      line += c;
+    }
+  }
+
+  return line;
+}
