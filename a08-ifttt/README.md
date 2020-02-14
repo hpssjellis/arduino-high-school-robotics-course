@@ -5,6 +5,8 @@ Checkout the backups and
 
 http://sheepdogguides.com/arduino/art4ifttt.htm
 
+IFTTT API at https://platform.ifttt.com/docs/api_reference
+
 
 
 
