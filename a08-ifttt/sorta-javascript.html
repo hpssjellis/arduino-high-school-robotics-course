@@ -41,13 +41,88 @@ let tom = async function(){
 
 (async function(){
 
-    let myResponse = postData('https://maker.ifttt.com/trigger/ddddddddddddddddd/with/key/ggggggggggggggggggggg',{'value1':'42'})
+    let myResponse = postData('https://maker.ifttt.com/trigger/test-webhook/with/key/p-uVrVdCarg8Atvm73Ygr',{'Value1':'42'})
     document.getElementById('myDiv01').innerHTML = await JSON.stringify(myResponse) 
     console.log(myResponse)
      }  )()
 }">
 
+
+<input type=button value=ifttt2 onclick="{
+
+//Accept:          application/json
+//Accept-Charset:  utf-8
+//Accept-Encoding: gzip, deflate
+//Content-Type:    application/json
+
+
+
+
+(async function(){
+
+    let myResponse = fetch('https://maker.ifttt.com/trigger/jjjjjjjjjjjjjjj/with/key/jjjjjjjjjjjjjj', {
+       method: 'POST', // *GET, POST, PUT, DELETE, etc.
+       mode: 'no-cors', // no-cors, *cors, same-origin
+       cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+       credentials: 'omit', // include, *same-origin, omit
+       headers: {
+            'Content-Type'   : 'application/json',
+            'Accept-Encoding': 'gzip, deflate',
+            'Accept-Charset': 'utf-8'
+
+         // 'Content-Type': 'application/x-www-form-urlencoded',
+       },
+       redirect: 'follow', // manual, *follow, error
+       referrerPolicy: 'no-referrer', // no-referrer, *client
+       body: JSON.stringify({'Value1':'42'}) // This is your message to be sent Value1, Value2, Value3 only
+
+    });
+
+    document.getElementById('myDiv01').innerHTML = await JSON.stringify(myResponse) 
+    console.log(JSON.stringify(myResponse) )
+     }  )()
+}">
+
+
+
+
+<input type=button value=ifttt3 onclick="{
+
+(async function(){
+
+    let myResponse = fetch('https://maker.ifttt.com/trigger/jjjjjjjjjjjjjj/with/key/jjjjjjjjjjjjj', {
+       method: 'POST', // *GET, POST, PUT, DELETE, etc.
+       mode: 'no-cors', // no-cors, *cors, same-origin
+       cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+       credentials: 'omit', // include, *same-origin, omit
+       headers: {
+            'Content-Type'   : 'application/json',
+            'Accept-Encoding': 'gzip, deflate',
+            'Accept-Charset': 'utf-8'
+
+         // 'Content-Type': 'application/x-www-form-urlencoded',
+       },
+       redirect: 'follow', // manual, *follow, error
+       referrerPolicy: 'no-referrer', // no-referrer, *client
+      // body: JSON.stringify({'value1':'42'}) // This is your message to be sent Value1, Value2, Value3 only
+       body: {'Value1':'42'} // This is your message to be sent Value1, Value2, Value3 only
+
+    });
+
+    document.getElementById('myDiv01').innerHTML = await JSON.stringify(myResponse) 
+    console.log(JSON.stringify(myResponse) )
+     }  )()
+}">
+
+
+<form method=POST action="https://maker.ifttt.com/trigger/jjjjjjjjjjjjjj/with/key/jjjjjjjjjjjjjjj">
+
+<input name ="value1" type=text value=43 >
+<input type=submit>
+
+</form>
   
 <div id="myDiv01">...</div>
 
+  
   
