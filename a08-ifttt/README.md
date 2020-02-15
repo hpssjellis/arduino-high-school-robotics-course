@@ -9,6 +9,34 @@ IFTTT API at https://platform.ifttt.com/docs/api_reference
 
 
 
+https://platform.ifttt.com/docs/api_reference
+
+
+
+
+
+Headers
+
+Accept:          application/json
+Accept-Charset:  utf-8
+Accept-Encoding: gzip, deflate
+Content-Type:    application/json
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 Using IFTTT with the particle.io Photon
