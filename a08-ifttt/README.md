@@ -24,7 +24,13 @@ Content-Type:    application/json
 
 ```
 
+Best to have a public folder and run using gitpod and the command
 
+```
+apachectl start
+
+
+```
 
 
 
