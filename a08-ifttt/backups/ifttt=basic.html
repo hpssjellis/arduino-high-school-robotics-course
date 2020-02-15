@@ -1,0 +1,70 @@
+<html>
+<head>
+
+
+<title>HTML form to IFTTT </title>
+
+
+
+</head>
+
+<body onload="{
+   myStorage1 = localStorage.getItem('myStoredText1')
+   if(myStorage1  != null){     
+      document.getElementById('myToken').value = myStorage1 
+    }   
+    myStorage2 = localStorage.getItem('myStoredText2')
+    if(myStorage2  != null){
+       document.getElementById('myDeviceId').value = myStorage2      
+    }
+          
+}">
+
+
+
+<h2 align=center>HTML form to IFTTT using the Maker Channel<br> </h2>
+
+
+
+Device ID:<input id="myDeviceId" name="myCoreID" type=text size=50 placeholder="button_pressed4"> <br>
+
+
+
+Access Token:<input id="myToken" name="access_token" type=password size=50 placeholder="5622ce6bba702ef6bd3456d5ed26aaa4a28d7c9"> <br>
+
+
+
+
+
+<form name="myForm" method="POST" id="myCoolForm" ><br>
+
+<input id="myParameter1" name="value1" type=text     size=50 value="d7-send-high"> 
+<input id="myParameter2" name="value2" type=text     size=50 value="d7-send-low"> 
+<input id="myParameter3" name="value3" type=text     size=50 value='{"fred":"tom","Mary":"45"}'> 
+
+<input type=submit onclick="{
+    document.myForm.action = 'https://maker.ifttt.com/trigger/' + document.all.myDeviceId.value + '/with/key/'+ document.all.myToken.value
+}">
+
+</form>
+
+
+
+<input type="button" value="Store the Photon's Token and ID locally!" onClick="{
+   localStorage.setItem('myStoredText1', document.all.myToken.value)   
+   localStorage.setItem('myStoredText2', document.all.myDeviceId.value)
+   alert( document.all.myToken.value + ' ' +document.all.myDeviceId.value + ' \nHas been stored')
+}">
+
+
+
+
+
+
+<br><br>
+
+
+
+
+</body>
+</html>
