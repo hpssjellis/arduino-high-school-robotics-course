@@ -6,7 +6,7 @@
 // Example POST method implementation:
 async function postData(url = '', data = {}) {
   // Default options are marked with *
-  const response = await fetch(url, {
+    let response = await fetch(url, {
     method: 'POST', // *GET, POST, PUT, DELETE, etc.
     mode: 'no-cors', // no-cors, *cors, same-origin
     cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
@@ -19,19 +19,35 @@ async function postData(url = '', data = {}) {
     referrerPolicy: 'no-referrer', // no-referrer, *client
     body: JSON.stringify(data) // body data type must match "Content-Type" header
   });
- // return await response.json(); // parses JSON response into native JavaScript objects
+  //return await response.json(); // parses JSON response into native JavaScript objects
+  return await response // parses JSON response into native JavaScript objects
 }
 
 
 let tom = async function(){
-   let myResponse = postData('https://maker.ifttt.com/trigger/ggggggggggggggggg/with/key/kkkkkkkkkkkkkkkkkkk',{'value1':'42'})
+   let myResponse = postData('https://maker.ifttt.com/trigger/test-webhook/with/key/p-uVrVdCarg8Atvm73Ygr',{'value1':'42'})
   //  await  console.log(myResponse.json()); // JSON data parsed by `response.json()` call
+// document.getElementById('myDiv01').innerHTML = 'wow'
+  
 }
 
 
-tom()
+
 
 
   </script>
+
+<input type=button value=ifttt onclick="{
+
+(async function(){
+
+    let myResponse = postData('https://maker.ifttt.com/trigger/ddddddddddddddddd/with/key/ggggggggggggggggggggg',{'value1':'42'})
+    document.getElementById('myDiv01').innerHTML = await JSON.stringify(myResponse) 
+    console.log(myResponse)
+     }  )()
+}">
+
+  
+<div id="myDiv01">...</div>
 
   
