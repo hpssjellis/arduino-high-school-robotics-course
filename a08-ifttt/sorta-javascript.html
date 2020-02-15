@@ -24,12 +24,7 @@ async function postData(url = '', data = {}) {
 }
 
 
-let tom = async function(){
-   let myResponse = postData('https://maker.ifttt.com/trigger/test-webhook/with/key/p-uVrVdCarg8Atvm73Ygr',{'value1':'42'})
-  //  await  console.log(myResponse.json()); // JSON data parsed by `response.json()` call
-// document.getElementById('myDiv01').innerHTML = 'wow'
-  
-}
+
 
 
 
@@ -41,7 +36,7 @@ let tom = async function(){
 
 (async function(){
 
-    let myResponse = postData('https://maker.ifttt.com/trigger/test-webhook/with/key/p-uVrVdCarg8Atvm73Ygr',{'Value1':'42'})
+    let myResponse = postData('https://maker.ifttt.com/trigger/test-webhook/with/key/jjjjjjjjjjjjjjj',{'value1':'42'})
     document.getElementById('myDiv01').innerHTML = await JSON.stringify(myResponse) 
     console.log(myResponse)
      }  )()
@@ -60,7 +55,7 @@ let tom = async function(){
 
 (async function(){
 
-    let myResponse = fetch('https://maker.ifttt.com/trigger/jjjjjjjjjjjjjjj/with/key/jjjjjjjjjjjjjj', {
+    let myResponse = fetch('https://maker.ifttt.com/trigger/test-webhook/with/key/jjjjjjjjjjjjjjjjjjjjjjjjj', {
        method: 'POST', // *GET, POST, PUT, DELETE, etc.
        mode: 'no-cors', // no-cors, *cors, same-origin
        cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
@@ -74,8 +69,8 @@ let tom = async function(){
        },
        redirect: 'follow', // manual, *follow, error
        referrerPolicy: 'no-referrer', // no-referrer, *client
-       body: JSON.stringify({'Value1':'42'}) // This is your message to be sent Value1, Value2, Value3 only
-
+       body: JSON.stringify({'value1':'42'}) // This is your message to be sent Value1, Value2, Value3 only
+      
     });
 
     document.getElementById('myDiv01').innerHTML = await JSON.stringify(myResponse) 
@@ -90,7 +85,7 @@ let tom = async function(){
 
 (async function(){
 
-    let myResponse = fetch('https://maker.ifttt.com/trigger/jjjjjjjjjjjjjj/with/key/jjjjjjjjjjjjj', {
+    let myResponse = fetch('https://maker.ifttt.com/trigger/test-webhook/with/key/jjjjjjjjjjjjjjjjjjjjjjjj', {
        method: 'POST', // *GET, POST, PUT, DELETE, etc.
        mode: 'no-cors', // no-cors, *cors, same-origin
        cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
@@ -104,8 +99,8 @@ let tom = async function(){
        },
        redirect: 'follow', // manual, *follow, error
        referrerPolicy: 'no-referrer', // no-referrer, *client
-      // body: JSON.stringify({'value1':'42'}) // This is your message to be sent Value1, Value2, Value3 only
-       body: {'Value1':'42'} // This is your message to be sent Value1, Value2, Value3 only
+       body: JSON.stringify({'value1':'42'}) // This is your message to be sent Value1, Value2, Value3 only
+      // body: {'Value1':'42'} // This is your message to be sent Value1, Value2, Value3 only
 
     });
 
@@ -115,14 +110,71 @@ let tom = async function(){
 }">
 
 
-<form method=POST action="https://maker.ifttt.com/trigger/jjjjjjjjjjjjjj/with/key/jjjjjjjjjjjjjjj">
+
+
+
+
+
+<form method=POST action="https://maker.ifttt.com/trigger/test-webhook/with/key/jjjjjjjjjjjjjjjjjjjjjjjjjjjj">
 
 <input name ="value1" type=text value=43 >
 <input type=submit>
 
 </form>
   
+
+<script>
+function tryThis(){
+  console.log(document.getElementById('myForm01').value)
+ 
+
+}
+</script>
+
+<form name="myCoolForm" id="myForm01" onsubmit="return tryThis()" method=POST action="https://maker.ifttt.com/trigger/test-webhook/with/key/jjjjjjjjjjjjjjjjjjjjj">
+
+<input name ="value1" type=text value=43 >
+<input type=submit>
+
+</form>
+  
+
+
+
+
 <div id="myDiv01">...</div>
 
   
   
+
+
+
+<input type=button value=ifttt4 onclick="{
+
+  const formData = new URLSearchParams();
+  formData.append('value1', '34');
+  formData.append('value2', '56');
+  formData.append('value3', 'cool');
+
+(async function(){
+
+    let myResponse = fetch('https://maker.ifttt.com/trigger/test-webhook/with/key/jjjjjjjjjjjjjjjjjjjjjj', {
+        method: 'POST', 
+        mode: 'no-cors',
+        headers: {
+           'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: formData.toString(),
+        json: true
+    })
+
+    document.getElementById('myDiv01').innerHTML = await JSON.stringify(myResponse) 
+
+     }  )()
+}">
+
+
+
+
+
+
