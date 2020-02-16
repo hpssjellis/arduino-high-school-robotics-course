@@ -11,17 +11,17 @@ float temp = 0.0;
 int lastBatteryLevel = 100;
 const char *quotes[] = {
   "I'll be back.",
-  "You are one ugly motherfucker.",
+  "You are one nice person.",
   "Hasta la vista, baby.",
-  "Remember, Sully, when I promised to kill you last?",
+  "Remember, Sully, when I promised to love you last?",
 
-  "Fuck you, asshole.",
-  "Consider this a divorce!",
+  "this is nice",
+  "Consider this a hug",
   "Get to the chopper!!",
   "Honey, you shouldn't drink and bake.",
 
   "Come with me if you want to live.",
-  "If it bleeds, we can kill it."
+  "If it bleeds, we can help it."
 };
 int curQuote = 0;
 mono::PowerSaver *saver;
