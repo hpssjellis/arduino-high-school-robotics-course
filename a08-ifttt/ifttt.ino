@@ -1,13 +1,18 @@
 /*
-This example creates a client object that connects and transfers
-data using always SSL.
-
-It is compatible with the methods normally related to plain
-connections, like client.connect(host, port).
-
-Written by Arturo Guadalupi
-last revision November 2015
-
+ * ifttt.ino
+ * 
+ * Written by Arturo Guadalupi 
+ * November 2015
+ * 
+ * updated for IFTTT by
+ * By Jeremy Ellis twitter @rocksetta
+ * Webpage http://rocksetta.com
+ * Arduino High School Robotics Course at
+ * https://github.com/hpssjellis/arduino-high-school-robotics-course
+ *  
+ * Expects an IFTTT webhook called test-webhook
+ * Go to webhooks Documentation page to find your Key
+ * Key in this sketch is jjjjjjjjjjjjjjjjjjjjjj must be changed
 */
 
 #include <SPI.h>
@@ -67,10 +72,14 @@ void setup() {
   if (client.connect(server, 443)) {
     Serial.println("connected to server");
     // Make a HTTP request:
-    client.println("POST /trigger/test-webhook/with/key/jjjjjjjjjjjjjjjjjjjjjjjjj HTTP/1.1");
+    client.println("POST /trigger/test-webhook/with/key/jjjjjjjjjjjjjjjjjjjjjjjj HTTP/1.1");
     client.println("Host: maker.ifttt.com");
     client.println("Connection: close");
+    client.println("Content-Type: application/x-www-form-urlencoded");
+    client.println("Content-Length: 35");  // The length of the next long line
     client.println();
+    client.println("value1=45&value2=Mary&value3=tom25");
+   // client.println();
   }
 }
 
