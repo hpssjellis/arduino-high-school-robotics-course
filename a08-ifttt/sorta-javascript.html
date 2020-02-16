@@ -1,180 +1,24 @@
 
 
-<script>
+<input id="myIfttEvent" type=text placeeholder="myEvent" value="test-webhook"><br>
+<input id="myIfttKey" type=text placeeholder="9437582374982374985" value="jjjjjjjjjjjjjjjjjjjjj"><br>
+Data:<br>
+value1:<input id="myValue1" type=text value="myOne"><br>
+value2:<input id="myValue2" type=text value="myTwo"><br>
+value3:<input id="myValue3" type=text value="myThree"><br>
 
-
-// Example POST method implementation:
-async function postData(url = '', data = {}) {
-  // Default options are marked with *
-    let response = await fetch(url, {
-    method: 'POST', // *GET, POST, PUT, DELETE, etc.
-    mode: 'no-cors', // no-cors, *cors, same-origin
-    cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
-    credentials: 'omit', // include, *same-origin, omit
-    headers: {
-      'Content-Type': 'application/json'
-      // 'Content-Type': 'application/x-www-form-urlencoded',
-    },
-    redirect: 'follow', // manual, *follow, error
-    referrerPolicy: 'no-referrer', // no-referrer, *client
-    body: JSON.stringify(data) // body data type must match "Content-Type" header
-  });
-  //return await response.json(); // parses JSON response into native JavaScript objects
-  return await response // parses JSON response into native JavaScript objects
-}
-
-
-
-
-
-
-
-
-  </script>
-
-<input type=button value=ifttt onclick="{
+<input type=button value=ifttt8 onclick="{
 
 (async function(){
-
-    let myResponse = postData('https://maker.ifttt.com/trigger/test-webhook/with/key/jjjjjjjjjjjjjjj',{'value1':'42'})
-    document.getElementById('myDiv01').innerHTML = await JSON.stringify(myResponse) 
-    console.log(myResponse)
-     }  )()
-}">
-
-
-<input type=button value=ifttt2 onclick="{
-
-//Accept:          application/json
-//Accept-Charset:  utf-8
-//Accept-Encoding: gzip, deflate
-//Content-Type:    application/json
-
-
-
-
-(async function(){
-
-    let myResponse = fetch('https://maker.ifttt.com/trigger/test-webhook/with/key/jjjjjjjjjjjjjjjjjjjjjjjjj', {
-       method: 'POST', // *GET, POST, PUT, DELETE, etc.
-       mode: 'no-cors', // no-cors, *cors, same-origin
-       cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
-       credentials: 'omit', // include, *same-origin, omit
-       headers: {
-            'Content-Type'   : 'application/json',
-            'Accept-Encoding': 'gzip, deflate',
-            'Accept-Charset': 'utf-8'
-
-         // 'Content-Type': 'application/x-www-form-urlencoded',
-       },
-       redirect: 'follow', // manual, *follow, error
-       referrerPolicy: 'no-referrer', // no-referrer, *client
-       body: JSON.stringify({'value1':'42'}) // This is your message to be sent Value1, Value2, Value3 only
-      
-    });
-
-    document.getElementById('myDiv01').innerHTML = await JSON.stringify(myResponse) 
-    console.log(JSON.stringify(myResponse) )
-     }  )()
-}">
-
-
-
-
-<input type=button value=ifttt3 onclick="{
-
-(async function(){
-
-    let myResponse = fetch('https://maker.ifttt.com/trigger/test-webhook/with/key/jjjjjjjjjjjjjjjjjjjjjjjj', {
-       method: 'POST', // *GET, POST, PUT, DELETE, etc.
-       mode: 'no-cors', // no-cors, *cors, same-origin
-       cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
-       credentials: 'omit', // include, *same-origin, omit
-       headers: {
-            'Content-Type'   : 'application/json',
-            'Accept-Encoding': 'gzip, deflate',
-            'Accept-Charset': 'utf-8'
-
-         // 'Content-Type': 'application/x-www-form-urlencoded',
-       },
-       redirect: 'follow', // manual, *follow, error
-       referrerPolicy: 'no-referrer', // no-referrer, *client
-       body: JSON.stringify({'value1':'42'}) // This is your message to be sent Value1, Value2, Value3 only
-      // body: {'Value1':'42'} // This is your message to be sent Value1, Value2, Value3 only
-
-    });
-
-    document.getElementById('myDiv01').innerHTML = await JSON.stringify(myResponse) 
-    console.log(JSON.stringify(myResponse) )
-     }  )()
-}">
-
-
-
-
-
-
-
-<form method=POST action="https://maker.ifttt.com/trigger/test-webhook/with/key/jjjjjjjjjjjjjjjjjjjjjjjjjjjj">
-
-<input name ="value1" type=text value=43 >
-<input type=submit>
-
-</form>
-  
-
-<script>
-function tryThis(){
-  console.log(document.getElementById('myForm01').value)
- 
-
-}
-</script>
-
-<form name="myCoolForm" id="myForm01" onsubmit="return tryThis()" method=POST action="https://maker.ifttt.com/trigger/test-webhook/with/key/jjjjjjjjjjjjjjjjjjjjj">
-
-<input name ="value1" type=text value=43 >
-<input type=submit>
-
-</form>
-  
-
-
-
-
-<div id="myDiv01">...</div>
-
-  
-  
-
-
-
-<input type=button value=ifttt4 onclick="{
-
-  const formData = new URLSearchParams();
-  formData.append('value1', '34');
-  formData.append('value2', '56');
-  formData.append('value3', 'cool');
-
-(async function(){
-
-    let myResponse = fetch('https://maker.ifttt.com/trigger/test-webhook/with/key/jjjjjjjjjjjjjjjjjjjjjj', {
+    let data = {value1:43,value2:34,value3:'hi'}
+    let myResponse = fetch('https://maker.ifttt.com/trigger/' + document.getElementById('myIfttEvent').value + '/with/key/' + document.getElementById('myIfttKey').value, {
         method: 'POST', 
         mode: 'no-cors',
         headers: {
-           'Content-Type': 'application/x-www-form-urlencoded',
+           'Content-Type': 'application/x-www-form-urlencoded'
         },
-        body: formData.toString(),
-        json: true
+        body: 'value1=' + document.getElementById('myValue1').value + '&value2=' + document.getElementById('myValue2').value +'&value3=' + document.getElementById('myValue3').value
     })
-
     document.getElementById('myDiv01').innerHTML = await JSON.stringify(myResponse) 
-
      }  )()
 }">
-
-
-
-
-
-
