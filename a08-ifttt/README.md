@@ -1,5 +1,11 @@
 Will get this working for Arduino eventually.
 
+So far I expect an IFTTT webhook that has the event name test-webhook. You have to go to the webhooks documentation page that shows you your key. In my code I have the key as jjjjjjjjjjjjjjjjjjjjjjj  Then go to the view activity, refresh after sending and see if the values value1, value2, value3 have been send. First step. Then we have to recieve some information and that might be the hardest part.
+
+
+
+
+
 
 Checkout the backups and 
 
