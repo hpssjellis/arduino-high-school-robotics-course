@@ -49,3 +49,80 @@ Rock Pi-S https://wiki.radxa.ccom/RockpiS   very cheap and powerful and wifi$
 $50 x 1 arduino mkr 1010 wifi https://store.arduino.cc/usa/mkr-wifi-1010
 
 
+
+https://developer.nvidia.com/embedded/jetson-nano-developer-kit 
+
+https://developer.nvidia.com/embedded/community/jetson-projects
+
+https://github.com/NVIDIA-AI-IOT/jetbot
+
+https://github.com/NVIDIA-AI-IOT/jetbot/wiki/bill-of-materials
+
+
+Part	Quantity	Cost	URL	Notes
+Jetson Nano	1	$99.00	NVIDIA	
+Micro SD card	1	$13.99	Amazon	64GB
+Power supply	1	$7.50	Adafruit	Micro USB, 5V, 2.5A
+Motor	2	$5.90	Adafruit, Amazon(1), Amazon(2)	"TT" form factor
+Motor Driver	1	$19.95	Adafruit, Amazon	
+Caster ball	1	$6.30	Amazon	1-inch diameter
+Battery	1	$15.99	Amazon	2x 5V/3A output, 10,000mAh
+USB cable pack	1	$6.99	Amazon	Type A to Micro, right angle
+PiOLED display	1	$14.95	Adafruit, Amazon	
+PiOLED header	1	$5.95	Adafruit, Amazon, Sparkfun	2x(3+) right angle male
+Chassis	1	--	STL file	see 3D printing
+Camera Mount	1	--	STL file	see 3D printing
+Camera
+You need a camera with appropriate sensor and field of view for each JetBot. Select an option and get the parts specified.
+
+Option 1 (default) - Leopard Imaging Camera
+Part	Quantity	Cost	URL	Notes
+Camera	1	$29.00	Leopard Imaging	LI-IMX219-MIPI-FF-NANO-H145
+ 
+WiFi
+You need a WiFi solution for each JetBot. Select an option and get the parts specified.
+
+Option 1 (default) - M2 Card + Antennas
+Part	Quantity	Cost	URL	Notes
+WiFi card	1	$18.95	Amazon, NewEgg	M2, Intel Wireless-AC 8265
+WiFi antenna	2	$5.06	Arrow	U.FL connectors
+
+Wheels
+You need wheels with a "TT" motor shaft connector for each JetBot. Select an option and get the parts specified.
+
+Option 1 - 60mm
+Part	Quantity	Cost	URL	Notes
+Wheel	2	$5.00	Adafruit	60mm diameter
+Caster base	1	--	STL file	for 60mm wheel
+Caster shroud	1	--	STL file	for 60mm wheel
+Option 2 - 65mm
+Part	Quantity	Cost	URL	Notes
+Wheel	2	$3.00	Adafruit	65mm diameter
+Caster base	1	--	STL file	for 65mm wheel
+Caster shroud	1	--	STL file	for 65mm wheel
+
+
+
+Assembly Hardware
+You need the following parts to build JetBot. They come in packs, so order the quantity you need for the number of JetBots you are going to build.
+
+Part	Qty per JetBot	Qty per pack	Cost per JetBot	URL	Notes
+Adhesive pads	2	48	$0.14	Amazon	
+M2 screw	20	100	$1.29	Amazon	8mm long, self tapping
+M3 screw	4	60	$0.47	Amazon	25mm long
+M3 nut	4	100	$0.24	Amazon	
+Jumper wires	4	40	$0.13	Amazon	Female-female, ~20cm
+
+Total   USD   $261.00    CDN $344.00    plus shipping both Amazon and adafruit expect 40 CDN  so total = $400. CDN. 
+
+
+
+
+
+
+
+
+
+
+
+
