@@ -2,6 +2,9 @@
 
 # Possible purchases for 2020
 
+logan
+
+https://www.seeedstudio.com/Sipeed-Longan-Nano-RISC-V-GD32VF103CBT6-Development-Board-p-4205.html
 
 
 Cheap ESP32  BLE and Wifi
