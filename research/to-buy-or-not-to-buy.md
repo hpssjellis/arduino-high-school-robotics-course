@@ -2,7 +2,18 @@
 
 # Possible purchases for 2020
 
+VR camera
 
+https://www.amazon.ca/Wolfwhoop-600TVL-Camera-Transmitter-Antenna/dp/B06X96VPSQ/ref=sr_1_1_sspa?keywords=wolfwhoop+wt02&qid=1582701847&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFVWURWS0s4S1pRU1kmZW5jcnlwdGVkSWQ9QTA0ODAxMTQxNVJSSEtNMUlRTlM1JmVuY3J5cHRlZEFkSWQ9QTAwNDc1NTUzU1RMNzk3SVNMM0pRJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==
+
+VR receiver
+
+https://www.amazon.ca/MeterMall-SKYDROID-Antenna-Receiver-Smartphone/dp/B083BBCDXF/ref=sr_1_2?keywords=skydroid+fpv+receiver+5.8G+150ch+otg&qid=1582701995&s=toys&sr=1-2
+
+
+$5.00 no wifi though
+
+https://www.seeedstudio.com/Seeeduino-XIAO-Arduino-Microcontroller-SAMD21-Cortex-M0+-p-4426.html
 
 2 x https://www.robotshop.com/en/arducam-arduino-panorama-360-shield.html
 
