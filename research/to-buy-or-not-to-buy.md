@@ -2,6 +2,21 @@
 
 # Possible purchases for 2020
 
+
+
+Cheap ESP32  BLE and Wifi
+
+https://www.amazon.ca/HiLetgo-ESP-WROOM-32-Development-Microcontroller-Integrated/dp/B0718T232Z
+
+https://www.amazon.ca/dp/B0718T232Z/ref=as_li_tl?slotNum=2&ie=UTF8&linkCode=g12&linkId=15ecdb3bfab6ad9215f56270035aad14&imprToken=ELWrxQSXJ66TZbE.4yHiOg&creativeASIN=B0718T232Z&tag=geekstips-20&creative=9325&camp=1789
+
+
+
+https://www.amazon.com/HiLetgo-ESP-WROOM-32-Development-Microcontroller-Integrated/dp/B0718T232Z
+
+Pinout for above http://www.geekstips.com/wp-content/uploads/2017/10/pinout_wroom_pinout-1024x723-1.jpg
+
+
 VR camera
 
 https://www.amazon.ca/Wolfwhoop-600TVL-Camera-Transmitter-Antenna/dp/B06X96VPSQ/ref=sr_1_1_sspa?keywords=wolfwhoop+wt02&qid=1582701847&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFVWURWS0s4S1pRU1kmZW5jcnlwdGVkSWQ9QTA0ODAxMTQxNVJSSEtNMUlRTlM1JmVuY3J5cHRlZEFkSWQ9QTAwNDc1NTUzU1RMNzk3SVNMM0pRJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==
