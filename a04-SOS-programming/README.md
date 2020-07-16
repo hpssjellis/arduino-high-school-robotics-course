@@ -2,7 +2,7 @@ Video [a04-SOS-programming](https://youtu.be/ZnaCcftdiR0?list=PL57Dnr1H_egsL0r4R
 
 
 
-
+This code is not for the Portenta H7 as it as LED_Builtin connected to 3V3 making the High and Low reversed. LOW turns the LED on, weird.
 
 
 By Jeremy Ellis
