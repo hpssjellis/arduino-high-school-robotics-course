@@ -5,7 +5,7 @@
   (async function () {
     const myResponse =  await fetch('http://YOUR-URL/H', {mode: 'no-cors'})
     await console.log('LED on sent')
-    document.getElementById('myFrame01').src += 'http://YOUR-URL';
+    document.getElementById('myFrame01').src += 'http://192.168.43.36';
   })()  //end inline async
 }">
 
@@ -13,13 +13,13 @@
   (async function () {
     const myResponse =  await fetch('http://YOUR-URL/L', {mode: 'no-cors'})
     await console.log('LED off sent')
-    document.getElementById('myFrame01').src += 'http://YOUR-URL';
+    document.getElementById('myFrame01').src += 'http://192.168.43.36';
   })()  //end inline async
 }">
 
 <input type=button value="Reload iFrame" onclick="{
-   document.getElementById('myFrame01').src += 'http://YOUR-URL';
+   document.getElementById('myFrame01').src += 'http://192.168.43.36';
 }">
 
 
-<iframe id="myFrame01" width="100%" Height="300" src="http://10.167.217.38"></iframe>
+<iframe id="myFrame01" width="100%" Height="300" src="http://192.168.43.36"></iframe>
