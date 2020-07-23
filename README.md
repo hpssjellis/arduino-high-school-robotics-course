@@ -3,6 +3,11 @@
 ## A High School Robotics course using several Arduino boards from the: Nano33Iot, Nano33BleSense, PortentaH7, and a few others boards that I put the Arduino nRF52840 Bootloader onto. 
 
 
+
+Github has a website at
+
+https://hpssjellis.github.io/arduino-high-school-robotics-course/
+
 Started Feb 7th, 2020.
 
 I have already tested and converted to Arduino most of the folders up to a12-stepper-motor. I will be working on the other folders over the next little while. I will keep the old videos until I have had time to make some new videos.
