@@ -1,6 +1,6 @@
 # Arduino High School Robotics Course
 
-### A High School Robotics course using several Arduino boards: Nano33Iot, Nano33BleSense, PortentaH7, and 2 non-arduino the Seeeduino XIAO and Espressif ESP32 NodeMCU-32S. We will also use the OpenMV micropython based PortentaH7 Vision Shield, and the Edge-Impulse Machine Learning Platform. 
+### A High School Robotics course using several Arduino boards: the Nano33Iot, Nano33BleSense and the PortentaH7, as well as 2 non-arduino boards the Seeeduino XIAO and Espressif ESP32 NodeMCU-32S. We will also use the OpenMV micropython based PortentaH7 Vision Shield, and the Edge-Impulse Machine Learning Platform. 
 
 
 
