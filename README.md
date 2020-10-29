@@ -1,8 +1,9 @@
 # Arduino High School Robotics Course
 
-### A High School Robotics course using several Arduino boards: the Nano33Iot, Nano33BleSense and the PortentaH7, and also 2 non-arduino boards the Seeeduino XIAO and Espressif ESP32 NodeMCU-32S. We will use the Arduino Regular IDE using the C and C++ programming languages. We will also use the OpenMV Micro-Python based PortentaH7 Vision Shield, and the Edge-Impulse Machine Learning Platform along with my own Javascript Web page based solutions. 
+### A High School Robotics course designed for my Feb 2021 Robotics class using several Arduino boards: the Nano33Iot, Nano33BleSense and the PortentaH7, and also 2 non-arduino boards the Seeeduino XIAO and Espressif ESP32 NodeMCU-32S. We will use the Arduino Regular IDE, (perhaps also the online cloud editor and the new Pro Editor) using the C and C++ programming languages. We will also use the OpenMV Micro-Python based PortentaH7 Vision Shield, and the Edge-Impulse Machine Learning Platform along with my own Javascript Web page based solutions and perhaps other shields that I get in the future. 
 
 
+[Price List](priceList.md) Don't forget to see the price list for the basic Robotics course that I teach. Students tend to work in pairs but I have them plan three final projects two of which should be done individually. 
 
 .
 
@@ -61,7 +62,7 @@ I have already tested and converted to Arduino most of the folders up to a12-ste
 
 ..
 
-[Price List](priceList.md) Don't forget to see the price list for the basic Robotics course that I teach. Students tend to work in pairs but I have them plan three final projects two of which should be done individually. 
+
 
 
 To begin with, while teachers are preping their course, the most important item is to have at least 2 the [Nano 33 IoT from the Arduino Store](https://store.arduino.cc/usa/nano-33-iot-with-headers) $20.00 USD
