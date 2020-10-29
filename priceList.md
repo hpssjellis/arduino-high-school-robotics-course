@@ -1,6 +1,6 @@
 # Minimal Price List for a Photon based Robotics course 
 
-
+Check the links for updated prices!
 A work in progress
 
 
