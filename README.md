@@ -3,7 +3,25 @@
 ### A High School Robotics course designed for my Feb 2021 Robotics class using several Arduino boards: the [Nano33Iot](https://store.arduino.cc/usa/nano-33-iot), [Nano33BleSense](https://store.arduino.cc/usa/nano-33-ble-sense) and the [PortentaH7](https://store.arduino.cc/usa/portenta-h7), and also 2 non-arduino boards the Seeeduino XIAO and Espressif ESP32 NodeMCU-32S. We will use the [Arduino Regular IDE](https://www.arduino.cc/en/software), (perhaps also the [online cloud editor](https://create.arduino.cc/) and the new Pro Editor when it is ready) using the C and C++ programming languages. We will also use the [OpenMV IDE](https://openmv.io/pages/download) Micro-Python based [PortentaH7 Vision Shield](https://store.arduino.cc/usa/portenta-vision-shield), and the [Edge Impulse](https://www.edgeimpulse.com/) Machine Learning Platform along with [my own Javascript TensorflowJS](https://www.rocksetta.com/tensorflowjs/) Web page based solutions and perhaps other shields that I get in the future. 
 
 
-[Price List](priceList.md) Don't forget to see the price list for the basic Robotics course that I teach. Students tend to work in pairs but I have them plan three final projects two of which should be done individually. 
+## [Price List](priceList.md) 
+Don't forget to see the price list for the basic Robotics course that I teach. Students tend to work in pairs but I have them plan three final projects two of which should be done individually. 
+
+Most of thi sinformation has been condensed from research repositories I have made or are in the process of making.
+
+1. [my-examples-for-the-arduino-portentaH7](https://github.com/hpssjellis/my-examples-for-the-arduino-portentaH7)
+
+2. [EdgeImpulse]() EdgeImpulse Machine Learning
+
+3. [OpenMV]() OpenMV, Micro-Python and the PortentaH7 Vision Shield
+
+4. [ESP32]() ESP32 by Espressif the NodeMCU-32S
+
+5. [Seeduino XIAO]() The altra cheap $4 USD board, needs USB C connector 
+
+
+
+
+
 
 .
 
