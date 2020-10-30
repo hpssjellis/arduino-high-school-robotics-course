@@ -8,15 +8,15 @@ Don't forget to see the price list for the basic Robotics course that I teach. S
 
 Most of this information has been condensed from research repositories I have made or are in the process of making.
 
-1. [my-examples-for-the-arduino-portentaH7](https://github.com/hpssjellis/my-examples-for-the-arduino-portentaH7)
+1. [my-examples-for-the-arduino-portentaH7](https://github.com/hpssjellis/my-examples-for-the-arduino-portentaH7) The Dual Core $100 Pro Arduino The PortentaH7
 
-2. [EdgeImpulse]() EdgeImpulse Machine Learning
+2. [https://github.com/hpssjellis/my-examples-of-edge-impulse](https://github.com/hpssjellis/my-examples-of-edge-impulse) Simplifying Machine Learning on both connected and un-connected micro-controllers.
 
-3. OpenMV OpenMV, Micro-Python and the PortentaH7 Vision Shield
+3. OpenMV, Micro-Python, The OpenMV IDE and the PortentaH7 Vision Shield
 
-4. ESP32 ESP32 by Espressif the NodeMCU-32S
+4. ESP32 by Espressif the NodeMCU-32S
 
-5. Seeduino XIAO The altra cheap $4 USD board, needs USB C connector 
+5. Seeduino XIAO The ultra cheap $4 USD board, needs USB C connector 
 
 
 
