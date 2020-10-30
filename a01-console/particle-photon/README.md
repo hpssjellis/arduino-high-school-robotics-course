@@ -1,0 +1,1 @@
+particle-photon/random-integer.ino is the one in the video Video a01-console: A simple console program to get things started. No webpage needed. Outputs a counter, a random number and the analog sensor A0 to the console, by using a GND (black), 3V3 (red) , SIG (yellow) sensor connected to A0 in this case a slide potentiometer (variable resistor).
