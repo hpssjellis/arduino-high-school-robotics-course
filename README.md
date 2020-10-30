@@ -6,6 +6,9 @@
 ## [Price List](priceList.md) 
 Don't forget to see the price list for the basic Robotics course that I teach. Students tend to work in pairs but I have them plan three final projects two of which should be done individually. 
 
+
+## More Info
+
 Most of this information has been condensed from research repositories I have made or are in the process of making.
 
 1. [my-examples-for-the-arduino-portentaH7](https://github.com/hpssjellis/my-examples-for-the-arduino-portentaH7) The Dual Core $100 Pro Arduino The PortentaH7
@@ -17,6 +20,10 @@ Most of this information has been condensed from research repositories I have ma
 4. ESP32 by Espressif the NodeMCU-32S
 
 5. Seeduino XIAO The ultra cheap $4 USD board, needs USB C connector 
+
+
+
+## Video
 
 
 
