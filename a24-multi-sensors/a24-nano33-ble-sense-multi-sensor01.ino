@@ -1,4 +1,9 @@
 /*
+ * 
+ * updated Feb 22nd, 2021
+ * by Jeremy  Ellis
+ * Twitter @rocksetta
+ * 
   nano-33-sense-serial-example.ino
   Copyright (c) 2020 Dale Giancono. All rights reserved..
   This program outputs all raw sensor data from the Arduino Nano 33 BLE 
@@ -48,26 +53,19 @@
 /* Set these macros to true with you want the output plotted in a way that
  * can be viewed with serial plotter. Having them all true creates a pretty
  * meaningless graph, as the scaling will be way off for each sensor, and there
- * will be too much data to view */
+ * will be too much data to view.
+ * The last one slows everything down for the serial monitor whil also showing selected
+ * Plot raw data.*/
+ 
 #define SERIAL_PLOT_MP34DT05    (true)
 #define SERIAL_PLOT_LSM9DS1     (true)
 #define SERIAL_PLOT_APDS9960    (true)
 #define SERIAL_PLOT_LPS22HB     (true)
 #define SERIAL_PLOT_HTS221      (true)
-#define SERIAL_MONITOR_AND_SLOW (true)
-
-/* This value was also used in the PDM example, seems like a good enough reason to
- * continue using it. With this value and 16kHz sampling frequency, the RMS sampling
- * period will be 16mS */
-//#define MICROPHONE_BUFFER_SIZE_IN_WORDS (256U)
-//#define MICROPHONE_BUFFER_SIZE_IN_BYTES (MICROPHONE_BUFFER_SIZE_IN_WORDS * sizeof(int16_t))
+#define SERIAL_MONITOR_AND_SLOW (false)
 
 
-// buffer to read samples into, each sample is 16-bits
-short sampleBuffer[256];
 
-// number of samples read
-volatile int samplesRead;
 
 /******************/
 /*LOCAL VARIABLES*/
@@ -77,9 +75,19 @@ volatile int samplesRead;
 /*GLOBAL VARIABLES*/
 /******************/
 
-/* MP34DT05 Microphone data buffer with a bit depth of 16. Also a variable for the RMS value */
-//int16_t microphoneBuffer[MICROPHONE_BUFFER_SIZE_IN_WORDS];
-////int16_t microphoneRMSValue;
+
+
+// For PDM microphone buffer to read samples into, each sample is 16-bits 
+short sampleBuffer[256];
+
+// For PDM microphone  number of samples read
+volatile int samplesRead;
+
+/* used for the PDM microphone */
+long myAverageSound = 0;
+long myTotalSounds = 0;
+long myMappedSound = 0;
+
 /* variables to hold LSM9DS1 accelerometer data */
 float accelerometerX, accelerometerY, accelerometerZ;
 /* variables to hold LSM9DS1 gyroscope data */
@@ -97,12 +105,7 @@ float temperature, humidity;
 int oldMillis;
 int newMillis;
 
-long myAverageSound = 0;
-long myTotalSounds = 0;
-long myMappedSound = 0;
-/* Used as a simple flag to know when microphone buffer is full and RMS value
- * can be computed. */
-//bool microphoneBufferReadyFlag;
+
 
 /****************************/
 /*LOCAL FUNCTION PROTOTYPES*/
@@ -111,13 +114,7 @@ long myMappedSound = 0;
 /****************************/
 /*GLOBAL FUNCTION PROTOTYPES*/
 /****************************/
-/* This function is called each time PDM data is available. It will be used to fill the
- * microphone buffer that we will then use to calculate RMS values */
-//void Microphone_availablePDMDataCallback(void);
-/* This function computes the RMS value based on the data contained within the microphoneBuffer
- * If the microphone buffer has a word length of 256, and the sample rate for the microphone is 16kHz,
- * then this RMS value is taken over (1/16000)*256 = 16mS */
-//void Micophone_computeRMSValue(void);
+
 
 /****************************/
 /*IMPLEMENTATION*/
@@ -128,27 +125,6 @@ void setup()
   Serial.begin(115200);
   /* Wait for serial to be available */
   //while(!Serial);   // this confuses students
-
-  /* PDM setup for MP34DT05 microphone */
-  /* configure the data receive callback to transfer data to local buffer */
- // PDM.onReceive(Microphone_availablePDMDataCallback);
-  /* Initialise single PDM channel with a 16KHz sample rate (only 16kHz or 44.1kHz available */
- // if (!PDM.begin(1, 16000))
-  //{
-  //  Serial.println("Failed to start PDM!");
-    /* Hacky way of stopping program executation in event of failure. */
-  //  while(1);
- // }
-  //else
-//  {
-    /* Gain values can be from 0 to 80 (around 38db). Check out nrf_pdm.h
-     * from the nRF528x-mbedos core to confirm this. */
-    /* This has to be done after PDM.begin() is called as begin() always
-     *  sets the gain as the default PDM.h value (20).
-     */
- //   PDM.setGain(50);
- // }
-
 
 
   // configure the data receive callback
@@ -185,7 +161,7 @@ void setup()
    * register as GESTURE_DOWN or GESTURE_UP and never GESTURE_LEFT or
    * GESTURE_RIGHT. This can be called before APDS.begin() as it just
    * sets an internal sensitivity value.*/
-  APDS.setGestureSensitivity(50);
+  APDS.setGestureSensitivity(70);  // 0 to 100
   if (!APDS.begin())
   {
     Serial.println("Error initializing APDS9960 sensor.");
@@ -214,19 +190,18 @@ void setup()
   /* Initialise timing variables. */
   oldMillis = 0;
   newMillis = 0;
-  /* Initialise micophone buffer ready flag */
- // microphoneBufferReadyFlag = false;
+
 }
 
 void loop()
 {
 
 
-  // wait for samples to be read
+  // wait for PDM microphone samples to be read
   if (samplesRead) {   
-    myAverageSound = 0;
-    myTotalSounds = 0;
-    myMappedSound = 0;
+     myAverageSound = 0;
+     myTotalSounds = 0;
+     myMappedSound = 0;
 
     // print samples to the serial monitor or plotter
 
@@ -260,27 +235,27 @@ void loop()
   if((newMillis - oldMillis) % 50)
   {
 #if (SERIAL_PLOT_MP34DT05 == true)
-   // Serial.printf("%d,", microphoneRMSValue);
-   // Serial.printf("%f,", myTotalSounds);
    // Serial.printf("%d,", myAverageSound);
     
    //map(value, fromLow, fromHigh, toLow, toHigh)
    myMappedSound = map(myAverageSound, -1000, 1000, -100, 300);
-   Serial.printf("%d,", myMappedSound);
-    
+   Serial.printf("%d,", myMappedSound);    
 #endif
+
 #if (SERIAL_PLOT_LSM9DS1 == true)
     Serial.printf("%f,%f,%f,", accelerometerX, accelerometerY, accelerometerZ);
     Serial.printf("%f,%f,%f,", gyroscopeX, gyroscopeY, gyroscopeZ);
     Serial.printf("%f,%f,%f,", magneticX, magneticY, magneticZ);
 #endif
-#if (SERIAL_PLOT_APDS9960 == true)
 
+#if (SERIAL_PLOT_APDS9960 == true)
     Serial.printf("%f,", barometricPressure);
 #endif
+
 #if (SERIAL_PLOT_LPS22HB == true)
     Serial.printf("%d,%d,%d,%d,%d,", proximity, gesture, colourR, colourG, colourB);
 #endif
+
 #if (SERIAL_PLOT_HTS221 == true)
     Serial.printf("%f, %f", temperature, humidity);
 #endif
@@ -328,9 +303,7 @@ void loop()
     gesture = APDS.readGesture();
   }
 
-
-
-
+// Slow it down and watch the monitor
 #if (SERIAL_MONITOR_AND_SLOW == true)
   delay(4000);
   Serial.println();
@@ -354,20 +327,8 @@ void loop()
   Serial.println("------------------------------------------------------------");
   Serial.println("Raw data below:");
 
-
-
-
 #endif
 
-
-  /* If the microphone buffer is full, compute the RMS value */
- // if(microphoneBufferReadyFlag)
-//  {
- //   Micophone_computeRMSValue();
- //   microphoneBufferReadyFlag = false;
- // }
-
-// delay(5000);
 }   // end main loop
 
 
@@ -384,25 +345,3 @@ void onPDMdata() {
 }
 
 
-
-/*
-
-void Microphone_availablePDMDataCallback()
-{
-  // query the number of bytes available
-  int bytesAvailable = PDM.available();
-
-  if(bytesAvailable == MICROPHONE_BUFFER_SIZE_IN_BYTES)
-  {
-    PDM.read(microphoneBuffer, bytesAvailable);
-    microphoneBufferReadyFlag = true;
-  }
-}
-
-void Micophone_computeRMSValue(void)
-{
-  arm_rms_q15((q15_t*)microphoneBuffer, MICROPHONE_BUFFER_SIZE_IN_WORDS, (q15_t*)&microphoneRMSValue);
-}
-
-
-*/
