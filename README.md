@@ -1,6 +1,10 @@
 # Arduino High School Robotics Course
 
 
+## Main Site
+Main Teaching Site that will use this information [https://github.com/hpssjellis/high-school-robotics-tinyml-machine-learning-curriculum](https://github.com/hpssjellis/high-school-robotics-tinyml-machine-learning-curriculum)
+
+
 ## Still in DRAFT Mode
 
 # Use Particle.io Photon until conversion to Arduino is complete. 
